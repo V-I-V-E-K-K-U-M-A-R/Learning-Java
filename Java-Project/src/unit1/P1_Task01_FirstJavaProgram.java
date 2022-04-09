@@ -6,5 +6,4 @@ public class P1_Task01_FirstJavaProgram {
 		// TODO Auto-generated method stub
 
 	}
-
 }
