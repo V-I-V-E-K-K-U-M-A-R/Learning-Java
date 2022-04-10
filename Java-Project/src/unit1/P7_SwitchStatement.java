@@ -1,5 +1,5 @@
 package unit1;
-
+import java.util.Scanner;
 
 /* Problem Statement: P7_SwitchStatements: 
    Create a switch statement [Manual], In Which:
@@ -14,16 +14,33 @@ public class P7_SwitchStatement {
 	public static void main(String[] args) {
 		
 		SwitchStatements obj = new SwitchStatements();
-		obj.switchStatements();
+		obj.SwitchStatements();
 
 	}
 
 }
 
 class SwitchStatements {
-	void switchStatements() {
-		
-		// Write Logic here!
-		
+	void SwitchStatements() {		
+			Scanner obj = new Scanner(System.in);
+			int num = obj.nextInt();
+
+			switch(num) {
+			case 1:
+				System.out.println("2022");
+				break;
+
+			case 2:
+				System.out.println("April");
+				break;
+			case 3:
+				System.out.println("Saturday");
+				break;
+			default:
+				System.out.println("Not Applicable");
+
+
+			}
+			obj.close();
 	}
 }

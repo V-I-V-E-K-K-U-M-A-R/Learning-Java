@@ -35,17 +35,55 @@ public class P8_String {
 class QuestionsOnString {
 
 	void palindromeOrNot(String s) {
-		// Write Logic Here!
+		int r,sum=0,temp;    
+		  int n=75457;//It is the number variable to be checked for palindrome  
+
+		  temp=n;    
+		  while(n>0){    
+		   r=n%10;  //getting remainder  
+		   sum=(sum*10)+r;    
+		   n=n/10;    
+		  }    
+		  if(temp==sum)    
+		   System.out.println("Yes it is palindrome ");    
+		  else    
+		   System.out.println("No it is not a palindrome"); 
 
 	}
 
 	void reverseOfAString(String s) {
-		// Write Logic Here!
+		// declaring variable
 
+				String stringinput = "Independent";
+
+				        // convert String to character array
+
+				        // by using toCharArray
+
+				        char[] resultarray = stringinput.toCharArray();
+
+				        //iteration
+
+				        for (int i = resultarray.length - 1; i >= 0; i--)
+
+				         // print reversed String
+
+				            System.out.print(resultarray[i]);
 	}
 	
 	void stringEqualOrNot(String s1,String s2) {
-		// Write Logic Here!
-		
+		Thread t1 = new Thread();
+        Thread t2 = new Thread();
+        Thread t3 = t1;
+
+        String s11 = new String("Vivek");
+        String s21 = new String("Vivek");
+
+        System.out.println(t1 == t3);
+        System.out.println(t1 == t2);
+        System.out.println(s11 == s21);
+
+        System.out.println(t1.equals(t2));
+        System.out.println(s11.equals(s21));		
 	}
 }
