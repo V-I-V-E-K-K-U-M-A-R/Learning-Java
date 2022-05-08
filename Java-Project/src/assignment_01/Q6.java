@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Q6 {
 
 	public static void main(String[] args) {
-		Arthmetic obj=new Arthmetic();
+		Arthmeti obj=new Arthmeti();
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter two numbers:");
 		int a=sc.nextInt();
@@ -18,7 +18,7 @@ public class Q6 {
 
 }
 
-class Arthmetic{
+class Arthmeti{
 	
 	float sub(float a,float b) {
 		if(a<b)

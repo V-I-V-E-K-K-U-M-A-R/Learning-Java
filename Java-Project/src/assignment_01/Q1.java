@@ -4,6 +4,7 @@ public class Q1 {
    public static void main(String[] args)
    {   Scanner sc=new Scanner(System.in);
 	   float avg;
+	   System.out.println("Vivek Kumar 20011311 H");
 	   System.out.println("Enter details of students:-\n");
        System.out.println("For Student 1:");
 	   Student obj1=new Student(sc.next(),sc.nextInt(),sc.next().charAt(0),sc.nextFloat());
@@ -31,6 +32,5 @@ class Student{
 	{	name=a;
 		age=b;
 		sec=c;
-		per=d;
-	}
+		per=d;	}
 }
