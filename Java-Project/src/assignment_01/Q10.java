@@ -1,31 +1,24 @@
 package assignment_01;
 import java.util.Scanner;
-
 public class Q10 {
 public static void main(String[] args) {
+	System.out.println("Vivek Kumar 20011311 H");
 	City arr[]=new City[4];
-	
 	Scanner obj= new Scanner(System.in);
 	String p;
 	int l,m,n,o;
-	
 	for(int i=0;i<4;i++)
-	{
-		System.out.println("Enter the name of the city");
+	{   System.out.println("Enter the name of the city");
 		p=obj.nextLine();
-		
-		System.out.println("enter no of maruti_k10 foollowed by zen_astelo,wagnor and maruti_sx4");
+		System.out.println("Enter no of Maruti_k10 foollowed by Zen_astelo,Wagnor and Maruti_sx4");
 		l=obj.nextInt();
 		m=obj.nextInt();
 		n=obj.nextInt();
 		o=obj.nextInt();
-		
 		obj.nextLine();
-		
 		arr[i]= new City(p,l,m,n,o);
 	}
 	l=m=n=o=0;
-
 	for(int i=0;i<4;i++)
 	{
 		l+=arr[i].maruti_k10;
@@ -33,11 +26,10 @@ public static void main(String[] args) {
 		n+=arr[i].wagnor;
 		o+=arr[i].maruti_sx4;
 		}
-	System.out.println("No of maruti_k10="+l);
-	System.out.println("No of zen_aastelo="+m);
-	System.out.println("No of wagnor="+n);
-	System.out.println("No of marut_sx4="+o);
-	
+	System.out.println("No of Maruti_k10="+l);
+	System.out.println("No of Zen_aastelo="+m);
+	System.out.println("No of Wagnor="+n);
+	System.out.println("No of Marut_sx4="+o);
 	obj.close();
 }
 }

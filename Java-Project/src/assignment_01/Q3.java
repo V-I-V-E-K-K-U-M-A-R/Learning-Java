@@ -3,25 +3,20 @@ import java.util.Scanner;
 public class Q3 {
 
 	public static void main(String[] args) {
+		System.out.println("Vivek Kumar 20011311 H");
+		System.out.println("Enter any Number :\n");
 		testClass obj = new testClass();
-		
 		Scanner o = new Scanner(System.in);
 		int a = o.nextInt();
-		
 		obj.display(a);
-
 	}
-
 }
-
 interface in1
 {
 	void display();
 }
-
 class testClass
-{
-	public void display(int p)
+{	public void display(int p)
 	{
 		 int i,m=0,flag=0;      
 		  m=p/2;      

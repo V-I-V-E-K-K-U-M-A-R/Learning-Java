@@ -1,35 +1,35 @@
 package assignment_01;
 
 import java.util.Scanner;
+
 public class Q6 {
 
 	public static void main(String[] args) {
-		
-		arithmetic obj  = new arithmetic();
-		Scanner s = new Scanner(System.in);
-		int a = s.nextInt();
-		int b = s.nextInt();
-		
-		a = (a > b)?obj.add(a, b):obj.sub(a, b);
+		Arthmetic obj=new Arthmetic();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter two numbers:");
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		sc.close();
+		float res;
+		res=a>b?obj.sum(a, b):obj.sub(a, b);
+		System.out.println("Result is: " + res);
 	}
 
 }
 
-
-class arithmetic
-{
-	int add(int a, int b)
+class Arthmetic{
+	
+	float sub(float a,float b) {
+		if(a<b)
+			return 0;
+		else
+			return a-b;
+	}
+	
+	float sum(float a, float b)
 	{
 		return a+b;
 	}
 	
-	int sub(int a, int b)
-	{
-		int res = a - b;
-		if(res < 0)
-		{
-			return 0;
-		}
-		return res;
-	}
 }

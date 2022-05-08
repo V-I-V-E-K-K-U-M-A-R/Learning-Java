@@ -1,65 +1,47 @@
 package assignment_01;
-
 import java.util.Scanner;
 public class Q5 {
-
 	public static void main(String[] args) {
-		
-		Employee arr[] = new Employee[8];
-		String s;
-		int age;
-		String depart;
-		int salary;
-		Scanner scan = new Scanner(System.in);
-		for(int i = 0; i < 8; i++)
-		{
-			s = scan.nextLine();
-			age = scan.nextInt();
-			depart = scan.next();
-			salary = scan.nextInt();
-			
-			arr[i] = new Employee(s, age, depart, salary);
-			
+		System.out.println("Vivek Kumar 20011311 H 62");
+		Scanner sc = new Scanner(System.in);
+		Employee obj[] = new Employee[8];
+		System.out.println("Enter details of employees:");
+		for (int i = 0; i < 8; i++) {
+			System.out.println("Enter details of employee "+(i + 1)+":");
+			obj[i] = new Employee(sc.next(), sc.nextInt(), sc.next().charAt(0), sc.nextLong());
 		}
-		//check total salary
-		Employee result = new Employee();
-		result.total_salary();
-		
+		sc.close();
+		for (int i = 0; i < 7; i++) {
+			for(int j=i+1;j<8;j++){
+			if (obj[i].department == obj[j].department) {
+				obj[i].calculate(obj[j]);
+			}
+		}
+			obj[i].display();
+		}
 	}
-
 }
-
-class Employee
-{
+class Employee {
 	String name;
 	int age;
-	String Department;
-	int salary;
-	static int total_sal = 0;
-	
-	Employee()
-	{
-		//Default one
+	char department;
+	long salary=0;
+	Employee(String a, int b, char c, long d) {
+		name = a;
+		age = b;
+		department = c;
+		salary = d;
 	}
-	Employee(String s, int a, String depart, int sal)
-	{
-		name = s;
-		age = a;
-		Department = depart;
-		if(sal > 30000)
+	void calculate(Employee obj) {
+		if(salary+obj.salary>30000)
 		{
-			salary = 25000;
+			salary+=25000;
 		}
 		else
-		{
-			salary = sal;
-		}
-		total_sal += sal;
+			salary+=obj.salary;
 	}
-	
-	void total_salary()
+	void display()
 	{
-		System.out.println("Total salary is "+total_sal);
+		System.out.println("Total salary for to be paid to department " + department + "is " + salary);
 	}
-	
 }

@@ -2,7 +2,6 @@ package assignment_01;
 
 public class Q2 {
 
-
 	public static void main(String[] args) {
 		check o1 = new check();
 		check o2 = new check();
@@ -27,6 +26,7 @@ class check
 	}
 	void print_count()
 	{
+		System.out.println("Vivek Kumar 62 H 20011311");
 		System.out.println("Number of times method is called is "+count);
 	}
 }
