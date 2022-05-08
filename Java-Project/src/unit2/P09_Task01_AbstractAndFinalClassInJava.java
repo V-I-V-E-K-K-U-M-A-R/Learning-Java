@@ -45,7 +45,7 @@ public class P09_Task01_AbstractAndFinalClassInJava {
 	}
 }
 //Final Class
-final class Super{
+final class Super {
 	public int data=30;
 	void display() {
 		System.out.println(data);

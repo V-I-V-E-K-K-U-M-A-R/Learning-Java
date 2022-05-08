@@ -28,8 +28,8 @@ public class P11_Task02_ImportingAndPackagesInJava {
 	out.println("Welcome to Package");
 	
 	out.println(sqrt(4));
-	System.out.println(pow(2,2));
-	System.out.println(abs(6.3));
+	out.println(pow(2,2));
+	out.println(abs(6.3));
 	
 	SampleClass1 obj = new SampleClass1();
 	System.out.println(obj.a);

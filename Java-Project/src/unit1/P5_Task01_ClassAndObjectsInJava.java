@@ -5,7 +5,7 @@ public class P5_Task01_ClassAndObjectsInJava {
 	public static void main(String[] args) {
 		
 		ABC2 obj = new ABC2();
-		obj.display();
+		obj.display2();
 		
 		ABC2.display();
 	}

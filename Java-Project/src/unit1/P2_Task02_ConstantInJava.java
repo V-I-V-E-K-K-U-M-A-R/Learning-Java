@@ -8,7 +8,7 @@ private static final double Pi = 3.14;
 		System.out.println(a);
 		add(1,2);
 		multi(1,2);
-		Calculator obj = new Claculator();
+		Calculator obj = new Calculator();
 		System.out.println(obj.add(1,2));
 		System.out.println(obj.a);
 	}

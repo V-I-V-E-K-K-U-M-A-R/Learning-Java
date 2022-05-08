@@ -26,13 +26,15 @@ public class P12_Task01_InterfaceInJava {
 		C1 obj = new C1();
 		obj.funcA();
 		obj.funcB();
+		species nigga=new species();
+		nigga.run1();
 	}
-	public void animalsound() {
+	/*public void animalsound() {
 		
 	}
 	public void run() {
 		
-	}
+	}*/
 }
 //Multiple interfaces can be implemented at the same time
 class species implements animal, human{
